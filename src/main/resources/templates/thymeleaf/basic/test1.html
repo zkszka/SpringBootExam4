@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><!-- 설계도를 가져다가 thymeleaf를 사용 -->
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- thymeleaf는 새로운 태그를 추가하지 않고 기존 태그의 속성으로 추가도내된다. html을 훼손하지 않으려함 -->
+	<!-- thymeleaf로 서버를 통해서 파일을 불러왔으므로 브라우저에서 페이지 소스를 보면 "화면에보이는내용"만 보인다 -->
+	<!-- 브라우저에서 파일을 열면 test1.html이 문자열로 출력됨. 
+	따라서 templates 내에 파일은 서버를 통해서 열어야 한다(타임리프 사용)-->
+	<h1 th:text="화면에보이는내용">test1.html</h1>
+</body>
+</html>
